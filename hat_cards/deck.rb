@@ -12,11 +12,30 @@ def style_text(text)
     .gsub(/Hit/, '<i>Hit</i>')
 end
 
+def get_ability_box_background_color(type)
+  case type.to_s
+  when "Action"
+    "#fae8ac" 
+  when "Bonus"
+    "#cfdafc"
+  else
+    "white"    
+  end
+end
+
 
 Squib::Deck.new(cards: data['Name'].size, layout: 'layout.yml') do
   background color: "white"
 
   rect layout: 'cut'
+
+  rect layout: 'title_box'
+
+  rect layout: 'ability1_box',
+    fill_color: data['Ability 1 Type'].map{|type| get_ability_box_background_color(type)}
+
+  rect layout: 'ability2_box',
+    fill_color: data['Ability 2 Type'].map{|type| get_ability_box_background_color(type)}
 
   text str: data['Name'],
     layout: 'name'
@@ -40,7 +59,7 @@ Squib::Deck.new(cards: data['Name'].size, layout: 'layout.yml') do
   #Ability 2
 
   text str: data['Ability 2 Name'],
-  layout: 'ability2_name'
+    layout: 'ability2_name'
 
   text str: data['Ability 2 Effect'],
     layout: 'ability2_effect'
