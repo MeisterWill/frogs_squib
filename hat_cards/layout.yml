@@ -1,0 +1,65 @@
+# --- layout.yml ---
+# Define named frames matching the script above
+# Measurements are in points (1/72 in), adjust as needed
+
+name:
+  x: 36
+  y: 36
+  width: 324
+  height: 48
+  align: :center
+
+level:
+  x: 300
+  y: 36
+  width: 60
+  height: 24
+  align: :right
+
+ability1_name:
+  x: 36
+  y: 100
+  width: 324
+  height: 20
+
+ability1_type:
+  x: 36
+  y: 122
+  width: 324
+  height: 18
+  align: :left
+
+ability1_effect:
+  x: 36
+  y: 142
+  width: 324
+  height: 60
+  wrap: true
+
+ability2_name:
+  x: 36
+  y: 210
+  width: 324
+  height: 20
+
+ability2_type:
+  x: 36
+  y: 232
+  width: 324
+  height: 18
+  align: :left
+
+ability2_effect:
+  x: 36
+  y: 252
+  width: 324
+  height: 60
+  wrap: true
+
+flavor_text:
+  x: 36
+  y: 330
+  width: 324
+  height: 40
+  wrap: true
+  ellipses: true
