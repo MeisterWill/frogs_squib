@@ -15,17 +15,17 @@ title_box:
 
 ability1_box:
   extends: ability1
-  x: 35
+  x: 45
   y: -= 15
-  width: 750
+  width: 730
   height: 280
   radius: 8
 
 ability2_box:
   extends: ability2
-  x: 35
+  x: 45
   y: -= 15
-  width: 750
+  width: 730
   height: 280
   radius: 8
 
@@ -57,7 +57,7 @@ flavor_text:
   wrap: true
 
 ability:
-  x: 60
+  x: 65
   y: 500
 
 ability1:
