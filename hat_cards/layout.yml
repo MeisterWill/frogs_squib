@@ -19,7 +19,7 @@ name:
 
 level:
   extends: title
-  x: 600
+  x: 650
   font: "Arial 10"
   align: :right
 
