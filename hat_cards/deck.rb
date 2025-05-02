@@ -64,7 +64,10 @@ Squib::Deck.new(cards: data['Name'].size, layout: 'layout.yml') do
   text str: data['Ability 2 Effect'],
     layout: 'ability2_effect'
   
-    save_png prefix: data['Level'].map { |level| "L#{level}_" },
+  save_png prefix: data['Level'].map { |level| "L#{level}_" },
     suffix: data['Name'].map { |name| "_#{name.gsub(/\W+/, '_')}" }
+
+  save_pdf file: 'printable_sheets.pdf',
+    margin: 0
 
 end
