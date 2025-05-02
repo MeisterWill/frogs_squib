@@ -64,5 +64,7 @@ Squib::Deck.new(cards: data['Name'].size, layout: 'layout.yml') do
   text str: data['Ability 2 Effect'],
     layout: 'ability2_effect'
   
-  save format: :png
+    save_png prefix: data['Level'].map { |level| "L#{level}_" },
+    suffix: data['Name'].map { |name| "_#{name.gsub(/\W+/, '_')}" }
+
 end

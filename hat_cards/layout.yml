@@ -18,7 +18,7 @@ ability1_box:
   x: 45
   y: -= 15
   width: 730
-  height: 280
+  height: 275
   radius: 8
 
 ability2_box:
@@ -26,7 +26,7 @@ ability2_box:
   x: 45
   y: -= 15
   width: 730
-  height: 280
+  height: 275
   radius: 8
 
 #Card text content
@@ -58,7 +58,7 @@ flavor_text:
 
 ability:
   x: 65
-  y: 500
+  y: 535
 
 ability1:
   extends: ability
@@ -66,11 +66,11 @@ ability1:
 
 ability1_name:
   extends: ability1
-  font: 'Arial Bold 10'
+  font: 'Arial Bold 9'
 
 ability1_effect:
   extends: ability1
-  y: += 50
+  y: += 45
   width: 700
   font: 'Arial 7.5'
   ellipsize: false
@@ -79,15 +79,15 @@ ability1_effect:
 
 ability2:
   extends: ability
-  y: += 300
+  y: += 290
 
 ability2_name:
   extends: ability2
-  font: 'Arial Bold 10'
+  font: 'Arial Bold 9'
 
 ability2_effect:
   extends: ability2
-  y: += 50
+  y: += 45
   width: 700
   font: 'Arial 7.5'
   ellipsize: false
