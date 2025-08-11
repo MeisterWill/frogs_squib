@@ -10,6 +10,8 @@ def style_text(text)
     .gsub(/Sproink/, '<span foreground="red">Sproink</span>')
     .gsub(/Roundness/, '<span foreground="green">Roundness</span>')
     .gsub(/Hit/, '<i>Hit</i>')
+    .gsub(/Windup/, '<b><i>Windup</i></b>')
+    .gsub(/Cooldown/, '<b><i>Cooldown</i></b>')
 end
 
 def get_ability_box_background_color(type)

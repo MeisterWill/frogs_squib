@@ -50,7 +50,7 @@ flavor_text:
   extends: title
   x: 36
   y: += 60
-  width: 600
+  width: 625
   font: "Arial Italic 8"
   align: :left
   ellipsize: false
